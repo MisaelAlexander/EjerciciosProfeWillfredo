@@ -1,4 +1,4 @@
-
+import {Link} from "react-router";
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -7,19 +7,29 @@ const Navbar = () => {
 
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/alumnos">Alumno</a>
+                            <Link className="nav-link" to="/alumnos">
+                                Alumno
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/calculadora">Calculadora</a>
+                            <Link className="nav-link" to="/calculadora">
+                                Calculadora
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/carta">Carta</a>
+                            <Link className="nav-link" to="/carta">
+                                Carta
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/cartas">Cartas</a>
+                            <Link className="nav-link" to="/cartas">
+                                Cartas
+                            </Link  >
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/boton">Boton</a>
+                            <Link className="nav-link" to="/boton">
+                                Boton
+                            </Link>
                         </li>
                     </ul>
                 </div>

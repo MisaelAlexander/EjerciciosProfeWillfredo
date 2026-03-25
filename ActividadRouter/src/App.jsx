@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Alumnos from './Pages/Alumnos.jsx'
+import Alumnos from './pages/Alumnos.jsx'
 import Calculadora from './Pages/Calculadora.jsx'
 import Carta from './Pages/carta.jsx'
 import Cartas from './Pages/Cartas.jsx'
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/alumnos" element={<Alumnos />} />
+        <Route path="/alumnos" element={<Alumnos />} default />
         <Route path="/calculadora" element={<Calculadora />} />
         <Route path="/carta" element={<Carta />} />
         <Route path="/cartas" element={<Cartas />} />
